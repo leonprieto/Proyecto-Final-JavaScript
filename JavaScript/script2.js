@@ -23,7 +23,7 @@ class administrador {
         this.cargar();
     }
     eliminarTarea(numero){
-        this.lista.splice(numero, 1);
+        this.lista.splice(numero, 1); 
         this.cargar();
     }
     cambiarEstado(numero){
@@ -39,7 +39,7 @@ class administrador {
             item.textContent = tarea.descripcion;
             /*item.style.backgroundColor = tarea.color;*/
             if(tarea.completado){
-                item.style.textDecoration = 'line-through';
+                item.style.textDecoration = 'line-through'; //no funciona
             }
             const botonEliminar = document.createElement("button");
             botonEliminar.innerHTML = 'Eliminar';
@@ -48,7 +48,7 @@ class administrador {
             listaDeTareas.appendChild(item);
         })
     }
-}
+} //estoy frustrado
 
 //BARRA DE NAVEGACION
 const header = document.getElementById('header');
