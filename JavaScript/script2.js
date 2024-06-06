@@ -1,5 +1,5 @@
 class tareas {
-    /*constructor(descripcion, color) {
+    /*constructor(descripcion, color) { quiero ponerle color pero no me sale
         this.descripcion = descripcion;
         this.color = color;
         this.completado = false;
@@ -41,7 +41,6 @@ class administrador {
             if(tarea.completado){
                 item.style.textDecoration = 'line-through';
             }
-
             const botonEliminar = document.createElement("button");
             botonEliminar.innerHTML = 'Eliminar';
             botonEliminar.addEventListener('click',this.eliminarTarea(numero));
